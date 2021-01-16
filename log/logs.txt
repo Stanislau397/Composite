@@ -1,0 +1,4 @@
+01:09:19.212 [main] ERROR edu.epam.regex.reader.TextReader - some
+01:10:34.648 [main] ERROR edu.epam.regex.reader.TextReader - some text
+02:23:40.250 [main] ERROR edu.epam.regex.reader.TextReader - text
+02:23:57.609 [main] ERROR edu.epam.regex.reader.TextReader - resources\text
