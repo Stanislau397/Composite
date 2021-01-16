@@ -36,12 +36,6 @@ public class TextComposite implements TextComponent {
     }
 
     @Override
-    public List<TextComponent> getChildren() {
-        List<TextComponent> textType = new ArrayList<>(components);
-        return textType;
-    }
-
-    @Override
     public int size() {
         return components.size();
     }

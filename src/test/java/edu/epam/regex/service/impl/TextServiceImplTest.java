@@ -23,7 +23,6 @@ public class TextServiceImplTest {
     @Test
     public void testCountDuplicateWords() {
         String text = TextData.TEXT;
-        String nextLine = "\n";
         String result = textService.countDuplicateWords(text).trim();
         String expResult = TextData.DUPLICATE_WORDS.trim();
 

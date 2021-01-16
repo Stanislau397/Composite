@@ -3,8 +3,6 @@ package edu.epam.regex.composite.impl;
 import edu.epam.regex.composite.CharacterType;
 import edu.epam.regex.composite.TextComponent;
 
-import java.util.List;
-
 public class CharacterComposite implements TextComponent {
 
     private CharacterType type;
@@ -22,11 +20,6 @@ public class CharacterComposite implements TextComponent {
 
     @Override
     public void remove(TextComponent component) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public List<TextComponent> getChildren() {
         throw new UnsupportedOperationException();
     }
 
