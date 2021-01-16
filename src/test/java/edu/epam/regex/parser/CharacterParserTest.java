@@ -1,7 +1,7 @@
 package edu.epam.regex.parser;
 
 import edu.epam.regex.composite.impl.TextComposite;
-import edu.epam.regex.data.DataConstant;
+import edu.epam.regex.data.TextData;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -19,7 +19,7 @@ public class CharacterParserTest {
 
     @Test
     public void testParse() {
-        String text = DataConstant.TEXT;
+        String text = TextData.TEXT;
         TextComposite characterComposite = characterParser.parse(text);
         int result = characterComposite.size();
         int expResult = 795;

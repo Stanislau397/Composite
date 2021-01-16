@@ -1,6 +1,6 @@
 package edu.epam.regex.service.impl;
 
-import edu.epam.regex.data.DataConstant;
+import edu.epam.regex.data.TextData;
 import edu.epam.regex.service.TextService;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -22,10 +22,10 @@ public class TextServiceImplTest {
 
     @Test
     public void testCountDuplicateWords() {
-        String text = DataConstant.TEXT;
+        String text = TextData.TEXT;
         String nextLine = "\n";
         String result = textService.countDuplicateWords(text).trim();
-        String expResult = DataConstant.DUPLICATE_WORDS.trim();
+        String expResult = TextData.DUPLICATE_WORDS.trim();
 
         assertEquals(result, expResult);
     }
@@ -44,7 +44,7 @@ public class TextServiceImplTest {
 
     @Test
     public void testCountVowels() {
-        String text = DataConstant.TEXT;
+        String text = TextData.TEXT;
         int result = textService.countVowels(text);
         int expResult = 241;
         assertEquals(result, expResult);
@@ -52,7 +52,7 @@ public class TextServiceImplTest {
 
     @Test
     public void testCountConsonants() {
-        String text = DataConstant.TEXT;
+        String text = TextData.TEXT;
         int result = textService.countConsonants(text);
         int expResult = 554;
         assertEquals(result, expResult);
@@ -60,18 +60,18 @@ public class TextServiceImplTest {
 
     @Test
     public void testFindSentenceWithLongestWord() {
-        String text = DataConstant.TEXT;
+        String text = TextData.TEXT;
         String result = textService.findSentenceWithLongestWord(text);
-        String expResult = DataConstant.LONGEST_WORD_IN_TEXT;
+        String expResult = TextData.LONGEST_WORD_IN_TEXT;
         assertEquals(result, expResult);
     }
 
     @Test
     public void testDeleteSentencesWithWordsLessThanGiven() {
-        String text = DataConstant.TEXT;
+        String text = TextData.TEXT;
         int amount = 5;
         String result = textService.deleteSentencesWithWordsLessThanGiven(text, amount);
-        String expResult = DataConstant.SENTENCE_WITH_WORDS_LESS_THAN_GIVEN;
+        String expResult = TextData.SENTENCE_WITH_WORDS_LESS_THAN_GIVEN;
         assertEquals(result, expResult);
     }
 

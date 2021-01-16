@@ -1,6 +1,6 @@
 package edu.epam.regex.data;
 
-public class DataConstant {
+public class TextData {
 
     public static final String TEXT = "    It has survived - not only (five) centuries, but also the leap into electronic\n" +
             "typesetting, remaining essentially unchanged. It was popularised in the “Динамо” (Рига)\n" +
